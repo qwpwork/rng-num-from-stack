@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container-fluid">
+  <div class="container">
+
+    <div class="wrap">
+      <div class="description row mt-3">
+        <p class="description__paragraph">
+          It's a init input. Here u can init an array with numbers from 1 to N. <br> N = 3 => array = [1, 2, 3]
+        </p>
+      </div>
+      <div class="number__wrapper row mb-3">
+        <div class="input-group col-8">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Array init</span>
+          </div>
+          <input type="text" inputmode="tel" id="numberInput" class="form-control" placeholder="20" aria-label="number">
+        </div>
+        <button class="number__submit btn btn-primary col-4" id="btnInit" type="submit">Init</button>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="description row mt-4">
+        <p class="description__paragraph">
+          Increment and decrement (or smth like this) <br>
+          array = [1, 2, 3] <br>
+          Press plus => array = [1, 2, 3, 4] <br>
+          Press minus => array = [1, 2, 3] <br>
+          Press minus (again) => array = [1, 2] <br>
+        </p>
+      </div>
+      <div class="number__wrapper increment-decrement row mb-3">
+        <button class="number__submit btn btn-primary col-5" id="btnDecrement">-</button>
+        <button class="number__submit btn btn-primary col-5" id="btnIncrement">+</button>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="description row mt-4">
+        <p class="description__paragraph">
+          Remove a number from element <br>
+          array = [1, 2, 3] <br>
+          N = 2 => array = [1, 3] <br>
+          N = 1 => array = [3] <br>
+        </p>
+      </div>
+      <div class="number__wrapper row mb-3">
+        <div class="input-group col-8">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Remove num</span>
+          </div>
+          <input type="text" inputmode="tel" id="removeNumber" class="form-control" placeholder="20" aria-label="number">
+        </div>
+        <button class="number__submit btn btn-primary col-4" id="btnRemove" type="submit">Remove</button>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="description row mt-4">
+        <p class="description__paragraph">
+          Remove a random number from array and show it on site<br>
+          array = [1, 2, 3] <br>
+          N = 2 <br>
+          array = [1, 3] <br>
+        </p>
+      </div>
+      <div class="number__wrapper row mb-3">
+        <button class="btn btn-primary number__submit col-md-12 mb-3 mt-3" id="btnPop" type="submit">Show next</button>
+      </div>
+    </div>
+
+    <div class="number__wrapper row mt-3 mb-3">
+      <p class="number__current col-12" id="numberCurrent"></p>
+    </div>
+
+    <div class="number__wrapper row mt-3 mb-3">
+      <span class="number__remain col-12" id="numberList"></span>
+    </div>
+    <div class="description row mt-5">
+      <p class="description__paragraph">
+        Reset all data
+      </p>
+    </div>
+    <div class="number__wrapper row">
+      <button class="number__submit btn btn-danger col-12" id="btnReset" type="submit">Reset (double click)</button>
+    </div>
+    <div class="row mt-3 mb-3">
+      <a href="./index.html">Default view</a>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
