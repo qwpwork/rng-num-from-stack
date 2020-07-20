@@ -1,0 +1,23 @@
+button {
+  padding: 0;
+}
+
+.number__submit {
+  height: 38px;
+}
+
+.increment-decrement .number__submit:first-of-type{
+  margin-right: auto;
+}
+
+.increment-decrement .number__submit:last-of-type{
+  margin-left: auto;
+}
+
+.number__remain {
+  word-break: break-all;
+}
+.input-group, .number__remain, .number__current {
+  padding-left: 0;
+  padding-right: 0;
+}

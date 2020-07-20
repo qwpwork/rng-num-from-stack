@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container-fluid">
+  <div class="container">
+    <div class="number__wrapper row mt-3 mb-3">
+      <div class="input-group col-8">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Array init</span>
+        </div>
+        <input type="text" inputmode="tel" id="numberInput" class="form-control" placeholder="20" aria-label="number">
+      </div>
+      <button class="number__submit btn btn-primary col-4" id="btnInit" type="submit">Init</button>
+    </div>
+
+    <div class="number__wrapper increment-decrement row mt-3 mb-3">
+      <button class="number__submit btn btn-primary col-5" id="btnDecrement">-</button>
+      <button class="number__submit btn btn-primary col-5" id="btnIncrement">+</button>
+    </div>
+
+    <div class="number__wrapper row mt-3 mb-3">
+      <div class="input-group col-8">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >Remove num</span>
+        </div>
+        <input type="text" inputmode="tel" id="removeNumber" class="form-control" placeholder="20" aria-label="number">
+      </div>
+      <button class="number__submit btn btn-primary col-4" id="btnRemove" type="submit">Remove</button>
+    </div>
+
+    <div class="number__wrapper row mt-3 mb-3">
+      <button class="btn btn-primary number__submit col-md-12 mb-3 mt-3" id="btnPop" type="submit">Show next</button>
+    </div>
+    <div class="number__wrapper row mt-3 mb-3">
+      <p class="number__current col-12" id="numberCurrent"></p>
+    </div>
+      <div class="number__wrapper row mt-3 mb-3">
+        <span class="number__remain col-12" id="numberList"></span>
+      </div>
+    <div class="number__wrapper row mt-5">
+      <button class="number__submit btn btn-danger col-12" id="btnReset" type="submit">Reset (double click)</button>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
